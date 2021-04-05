@@ -6,7 +6,6 @@ app.use(cors())
 // const waveData = require('./example.json')
 
 app.get('/wave', (req, res) => {
-  console.log('i am in wave')
   axios.get("https://services.surfline.com/kbyg/spots/forecasts/wave", {
     params: {
       spotId: "5842041f4e65fad6a7708b35",
